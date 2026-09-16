@@ -25,7 +25,7 @@ public class IT26101286Lab7Q3 {
             System.out.print("Enter mode of payment (C for cash, O for other): ");
             paymentMode = input.next().toUpperCase().charAt(0);
 
-            if (paymentMode == 'C' ||paymentMode=='c') {
+            if (paymentMode == 'C' ) {
 
                 discount = billAmount * DISCOUNT_RATE;
                 amountToPay = billAmount - discount;
@@ -33,7 +33,7 @@ public class IT26101286Lab7Q3 {
                 System.out.println("Discount is : " + discount);
                 System.out.println("Amount to be paid: " + amountToPay);
 
-            } else if (paymentMode == 'O' || paymentMode=='o') {
+            } else if (paymentMode == 'O') {
 
                 amountToPay = billAmount;
 
